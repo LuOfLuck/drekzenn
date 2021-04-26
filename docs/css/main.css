@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding: 0;
+}
+:root{
+    
+    --amarillo: #ffc107;
+    --blanco: #f8f9fa;
+    --negro: #343a40;
+    --verde: #28a745;
+    --celeste:#007bff;
+    --gris:#6c757d;
+}
+.row{
+    margin:0 !important;
+    padding: 0 !important;
+}
+.border{
+    box-shadow: 0px 0px 6px var(--blanco);
+}
+header{
+    box-shadow: 0px 0px 4px var(--blanco);
+}
+.navbar{
+    min-height: 13vh;
+    height: auto;
+    font-family: 'Zen Dots', cursive;
+    
+}
+.navbar-brand {
+    font-size:2rem;
+}
+.navbar-nav{
+    font-size: 1.5rem;
+}
+.nav-item:hover{
+    border-top:4px solid var(--amarillo);
+    border-radius: 10px;
+    animation: border-girar .1s ease;
+}
+@keyframes border-girar {
+    0%{
+        border-top:4px solid var(--amarillo);
+    }
+    25%{
+        border-right:4px solid var(--amarillo);
+    }
+    50%{
+        border-bottom:4px solid var(--amarillo);
+    }
+    100%{
+        border-left:4px solid var(--amarillo);
+    }
+}
+.main{
+    position:relative;
+}
+
+.main-backgraound {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -10;
+}
+.main-backgraound img {
+    display:block;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px -50px 10px rgb(0 0 0 / 90%);
+}
+@media (max-width: 767px){
+    .main-backgraound{
+        height: 87vh;
+        background-image: linear-gradient(-45deg, var(--gris) 25%, var(--negro) 90%);
+        top: 13vh;
+        position:static;
+        display:flex;
+        justify-content: center;
+    }
+
+    .main-backgraound img{
+        display:block;
+        width: 0%;
+        height: 0%;
+        margin:auto;
+    }
+}
+
+.cont{
+	width:100%;
+	height:auto;
+    border-radius: 10px;
+	position:relative;
+	top:87vh;
+	background-color:white;
+	z-index:10;
+    box-shadow: 0px -5px 20px var(--negro);
+}
+.cont__block{
+    margin: 140px 0;
+}
+.cont__block img, .main-carousel{
+    display: block;
+    min-height: 450px;
+    height: auto;
+}
+.block__titulo{
+    word-wrap: break-word;
+    font-family: 'Zen Dots', cursive;
+}
+.block__parrafo{
+    word-wrap: break-word;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.3rem;   
+}
+.block__parrafo > ul{
+    list-style:none;
+}
+@media (min-height: 1300px){
+    .block__titulo{
+        font-size: 2rem;
+    }
+    .block__parrafo{
+        font-size: 1.6rem;
+    }
+}
+@media (max-width: 767px){
+    .cont{
+        top:0vh;
+        border-radius:0;
+    }
+
+}
+@media (max-width: 360px){
+    .block__titulo{
+        font-size: 1rem;
+    }
+    .block__parrafo{
+        font-size: 1rem;
+    }
+}
+#myCarousel{
+    margin: auto 0 !important;
+}
+
