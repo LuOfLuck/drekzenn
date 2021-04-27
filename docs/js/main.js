@@ -34,9 +34,9 @@ sr.reveal('.block__parrafo > ul > li', {
 
 
 
-var over = document.getElementById("over");
-function position(event){
-	var x = event.clientX - 25;
-	var y = event.clientY - 25;
-    over.style =`top: ${y}px; left: ${x}px`;
-}
+// var over = document.getElementById("over");
+// function position(event){
+// 	var x = event.clientX - 25;
+// 	var y = event.clientY - 25;
+//     over.style =`top: ${y}px; left: ${x}px`;
+// }
