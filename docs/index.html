@@ -15,21 +15,22 @@
 
     <title>DrekzeNN</title>
 </head>
-<body>
+<body >
+
     <header class="header">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <a class="navbar-brand ml-lg-5" href="#">DrekzeNN</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-              </button>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto mr-lg-5">
                     <li class="nav-item active mx-lg-4">
                         <a class="nav-link text-center" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
-                        <li class="nav-item mx-lg-4">
-                    <a class="nav-link text-center" href="#">Contactame</a>
-                        </li>
+                    <li class="nav-item mx-lg-4">
+                        <a class="nav-link text-center" href="#">Contactame</a>
+                    </li>
                     <li class="nav-item mx-lg-4">
                         <a class="nav-link text-center" href="#">Acerca de</a>
                     </li>
@@ -37,17 +38,21 @@
             </div>
         </nav>
     </header>
+    <div class="panel" onmousemove="position(event);">
+        <!-- este panel sirve para que el overmous sirve-->
+    </div>
+    <div id="over" class="overmous"></div>
 
     <div class="main">
         <div class="main-backgraound">
             <img src="img/background.jpg" alt="DrekzeNN header" class="m-0">  
             <div id="myCarousel" class="carousel slide my-auto d-block d-md-none" data-ride="carousel">
-                            <ol class="carousel-indicators">
-                            <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                            <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-                            <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
-                            </ol>
-                            <div class="carousel-inner w-100">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner w-100">
                                 <div class="carousel-item active">
                                     <img src="img/carucel/carrucel-1.jpg" class="d-block w-100" alt="...">
                                     <div class="carousel-caption d-none d-md-block">
@@ -69,12 +74,12 @@
                                         <p>Entrevista .</p>
                                     </div>
                                 </div>
-                            </div>
-                            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Anterior</span>
-                            </a>
-                            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="sr-only">Proxima</span>
                             </a>
@@ -131,9 +136,9 @@
                 <div class="cont__block col-11 col-md-10 col-lg-8 mx-auto p-0 border d-none d-md-block">
                     <div id="myCarousel" class="carousel slide my-auto " data-ride="carousel">
                         <ol class="carousel-indicators">
-                        <li data-target="#siguiente" data-slide-to="0" class="active"></li>
-                        <li data-target="#siguiente" data-slide-to="1"></li>
-                        <li data-target="#siguiente" data-slide-to="2"></li>
+                            <li data-target="#siguiente" data-slide-to="0" class="active"></li>
+                            <li data-target="#siguiente" data-slide-to="1"></li>
+                            <li data-target="#siguiente" data-slide-to="2"></li>
                         </ol>
                         <div class="carousel-inner w-100">
                             <div class="carousel-item active">
@@ -176,6 +181,13 @@
             </div>
         
         </div>
+    </div>
+
+
+    <div class="p-0 p-md-5">
+        <div class="cont bg-dark border-dark">
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>  
     </div>
 
     
