@@ -103,7 +103,9 @@ header{
         height: 400px;
     }
 }
-
+.separador{
+    margin-bottom: 90vh;
+}
 .cont{
 	width:100%;
 	height:auto;
@@ -152,13 +154,22 @@ header{
     }
 }
 @media (max-width: 767px){
+    .separador{
+        margin-bottom: 50vh;
+    }
     .cont{
         top:0vh;
         border-radius:0;
     }
+    .cont__block{
+        margin: 100px 0;
+    }
 
 }
 @media (max-width: 361px){
+    .cont__block{
+        margin: 80px 0;
+    }
     .block__titulo h1{
         font-size: 1.5rem;
     }
@@ -172,9 +183,12 @@ header{
 
 
 .cont__titulo__h1 {
-    color:white;
-    border-bottom: 5px solid white;
-    padding-bottom: 10px;
+    color:var(--blanco);
+    border-radius: 5px 5px 25px 25px ;
+    border-bottom: 5px solid var(--blanco);
+    border-left: 5px solid var(--blanco);
+    border-right: 5px solid var(--blanco);
+    padding: 10px 0;
     font-family: 'Zen Dots', cursive;
 }
 .cont__video iframe{
@@ -184,13 +198,66 @@ header{
     .cont__video iframe{
         height: 200px;
     }
+    .cont__titulo__h1 {
+        font-size: 1.7rem;
+        border-radius: 0;
+        border-bottom: 2px solid var(--blanco);
+        border-left: 0px;
+        border-right: 0px;
+        padding: 5px 0;
+    }
+    
 }
-.redes{
-    width: 30%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.footer{
     text-align: center;
-    color: #718093;
+    color: var(--celeste);
 }
+.cont__subtitulo{
+    font-size:1.5rem;
+    border-bottom: 3px solid var(--blanco);
+}
+.cont__subtitulo,
+.aviso p,
+.redes i{
+    color: var(--blanco);
+}
+.aviso span{
+    font-size:1.2rem;
+}
+.legal > ul{
+    list-style-type: none;
+}
+.redes i{
+    margin: 10px auto;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+.redes .fa-facebook-square:hover,
+.redes .fa-twitter:hover{
+    color: var(--celeste);
+}
+.redes .fa-instagram:hover{
+    color: var(--amarillo);
+}
+
+@media (max-width: 767px){
+    .redes i{
+        padding: 0 1rem;
+    }
+}
+@media (max-width: 461px){
+    .aviso p{
+        font-size:.8rem;
+    }
+    .aviso span{
+        font-size:1rem;
+    }
+    .cont__subtitulo{
+    color: var(--blanco);
+    font-size:1.2rem;
+    border-bottom: 1px solid var(--blanco);
+}
+
 }
