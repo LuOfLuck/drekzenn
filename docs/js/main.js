@@ -34,9 +34,14 @@ sr.reveal('.block__parrafo > ul > li', {
 
 
 
-// var over = document.getElementById("over");
-// function position(event){
-// 	var x = event.clientX - 25;
-// 	var y = event.clientY - 25;
-//     over.style =`top: ${y}px; left: ${x}px`;
-// }
+const scrollPosition = idElement => {
+    let element = document.getElementById(idElement);
+    let elementTop = element.getBoundingClientRect().top + window.scrollY;
+    let scrollPositionY= ((idElement == "footer")?elementTop += 100 : (idElement == "home")?elementTop:( screen.width > 500)?elementTop-100:elementTop-50)
+    window.scroll({
+        top:  scrollPositionY,
+        left: 0,
+        behavior: 'smooth'
+    });
+
+}
